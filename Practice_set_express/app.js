@@ -37,6 +37,8 @@ app.get("/contact-us",(req,res,next)=>{
 });
 
 app.post("/contact-us",(req,res,next)=>{
+    console.log("Handling /contact-us for post ",req.url,req.method);
+    res.send(`<h1>We will contact you shortly</h1>`);
     
 })
 
